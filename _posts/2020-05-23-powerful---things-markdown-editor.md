@@ -4,7 +4,7 @@ title:  "A  new post"
 author: Clint_chan
 categories: [ Clint_chan, tutorial ]
 image: assets/images/4.jpg
-tags: [All storied]
+tags: [Featured]
 ---
 There are lots of powerful things you can do with the Markdown editor
 
