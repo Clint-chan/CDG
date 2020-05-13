@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A  new post"
+title:  "New post"
 author: Clint_chan
 categories: [ Clint_chan, tutorial ]
 image: assets/images/4.jpg
@@ -46,4 +46,7 @@ Another way to insert links in markdown is using reference lists. You might want
 ## Full HTML
 
 Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
+
+## Which
+What languege you like first? I will try to do that.
 
