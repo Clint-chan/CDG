@@ -214,7 +214,7 @@ def countingSort(arr, maxValue):
 
 ##### 7.桶排序
 ###### 7.1原理及图示
-![桶排序](https://www.runoob.com/wp-content/uploads/2019/03/Bucket_sort_2.svg_.png)
+![桶排序](https://clint-chan.github.io/CDG/assets/images/bucket-sort.png)
 ###### 7.2代码部分
 ``` 
 #桶排序Python代码
