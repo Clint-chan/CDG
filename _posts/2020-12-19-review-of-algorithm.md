@@ -302,6 +302,7 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 <i class="fab fa-angellist fa-3x"></i>
 
 ![排序总结](https://clint-chan.github.io/CDG/assets/images/比较.jpg)
+
 对上述算法做到知其然并知其所以然。
 
 ----------
