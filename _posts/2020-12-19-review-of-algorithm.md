@@ -377,7 +377,7 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 13        return q
 14    return MemorizedCutRodAux(p, n, r),r
 ```
-`Core part:Line 3,4,5.Specific codes go looking up pdf. 
+`Core part:Line 3,4,5.Specific codes go looking up pdf. `
 
 `③自底向上`
 ``` 
