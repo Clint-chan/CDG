@@ -358,7 +358,41 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 13        return q
 14    return MemorizedCutRodAux(p, n, r),r
 ```
-`Core part:Line 5,6.Specific codes go looking up pdf. `
+`Core part:Line 3,4,5.Specific codes go looking up pdf. `
+`②带备忘录的自顶向下`
+``` 
+#带备忘录的自顶向下
+1 def MemorizedCutRod(p, n):
+2    r=[-1]*(n+1)                          #  数组初始化
+3    def MemorizedCutRodAux(p, n, r):
+4        if r[n] >= 0:
+5            return r[n]
+6        q = -1
+7        if n == 0:
+8            q = 0
+9        else:
+10            for i in range(1, n + 1):
+11                q = max(q, p[i] + MemorizedCutRodAux(p, n - i, r))
+12        r[n] = q
+13        return q
+14    return MemorizedCutRodAux(p, n, r),r
+```
+`Core part:Line 3,4,5.Specific codes go looking up pdf. 
+
+`③自底向上`
+``` 
+1 def BottomUpCutRod(p, n):
+2   r = [0]*(n+1)
+3    for i in range(1, n+1):
+4        if n == 0:
+5            return 0
+6        q =0
+7        for j in range(1, i+1):
+8            q = max(q, p[j]+r[i-j])
+9            r[i] = q
+10    return r[n],r
+```
+`Core part:Line All.Specific codes go looking up pdf. `
  [点击这里回到目录](#目录)
 #### 四.贪心算法
  [点击这里回到目录](#目录)
