@@ -117,7 +117,7 @@ def merge(left,right):
     return result
 ```
 
-##### 4.快速排序
+##### 4.快速排序<i class="fas fa-highlighter"></i>
 ###### 4.1原理及图示
 ![快速排序](https://www.runoob.com/wp-content/uploads/2019/03/quickSort.gif)
 ###### 4.2代码部分
@@ -148,7 +148,7 @@ def swap(arr, i, j):
     arr[i], arr[j] = arr[j], arr[i]
 ```
 
-##### 5.堆排序
+##### 5.堆排序<i class="fas fa-highlighter"></i>
 ###### 5.1原理及图示
 ![堆排序](https://www.runoob.com/wp-content/uploads/2019/03/heapSort.gif)
 
@@ -302,14 +302,14 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 <i class="fab fa-angellist fa-3x"></i>
 
 ![排序总结](https://clint-chan.github.io/CDG/assets/images/比较.jpg)
-
+对上述算法做到知其然并知其所以然。
 
 ----------
 
 
 #### 二.红黑树
  [点击这里回到目录](#目录)
-#### 三.动态规划
+#### 三.动态规划 <i class="fas fa-highlighter"></i>
 	动态规划三要素：
 					（1）问题的阶段
 					（2）每个阶段的状态
@@ -323,9 +323,34 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 
 ----------
 #### 3.1钢条切割问题
-①自顶向下（$2^n$的时间复杂度）
-②带备忘录的自顶向下 O（n^2）
-③自底向上
+- ①自顶向下（非多项式级复杂度）
+- ②带备忘录的自顶向下（平方阶）
+- ③自底向上（平方阶）
+  
+`①自顶向下`
+``` 
+#自顶向下
+1 def CutRod(p, n):  # 函数返回：切割长度为 n 的钢条所得的最大收益
+2    if n == 0:
+3        return 0
+4    q = -1
+5    for i in range(1, n+1):
+6        q = max(q, p[i] + CutRod(p, n-i)) 
+7    return q
+```
+`Core part:Line 5,6.Specific codes go looking up pdf. `
+`①自顶向下`
+``` 
+#带备忘录的自顶向下
+1 def CutRod(p, n):  # 函数返回：切割长度为 n 的钢条所得的最大收益
+2    if n == 0:
+3        return 0
+4    q = -1
+5    for i in range(1, n+1):
+6        q = max(q, p[i] + CutRod(p, n-i)) 
+7    return q
+```
+`Core part:Line 5,6.Specific codes go looking up pdf. `
  [点击这里回到目录](#目录)
 #### 四.贪心算法
  [点击这里回到目录](#目录)
