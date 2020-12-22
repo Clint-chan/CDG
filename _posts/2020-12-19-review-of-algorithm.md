@@ -429,6 +429,7 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 - [5] [30张图带你彻底理解红黑树](https://www.jianshu.com/p/e136ec79235c)
 - [6] [常见的八大排序算法的比较和选择依据](https://www.cnblogs.com/bjwu/articles/10006419.html)
 - [7] [各种排序算法总结和比较](https://www.cnblogs.com/zhaoshuai1215/p/3448154.html?_blank)
+- [8] [leetcode410:分割数组的最大值_填表法求解动态规划](https://blog.csdn.net/ncepu_Chen/article/details/107625127)
 
 `温馨提示：用Ctrl+鼠标左键可以创建新窗口打开链接以便流畅体验。`
 
