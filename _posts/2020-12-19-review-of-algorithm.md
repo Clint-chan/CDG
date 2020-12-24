@@ -393,6 +393,7 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 
 ----------
 
+插入和删除相对复杂，需要仔细学习教案和参考资料。
 
 - **插入**：插入一共有八种情景；
  ![插入](https://clint-chan.github.io/CDG/assets/images/红黑树插入.png)
