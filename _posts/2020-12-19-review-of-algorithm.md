@@ -392,6 +392,7 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 *  **右旋**：以某个结点作为支点(旋转结点)，其左子结点变为旋转结点的父结点，左子结点的右子结点变为旋转结点的左子结点，右子结点保持不变。
 *  **变色**：结点的颜色由红变黑或由黑变红。
 
+
 ![左旋](https://clint-chan.github.io/CDG/assets/images/左旋.png)
 
 
@@ -400,8 +401,10 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 插入和删除相对复杂，需要仔细学习教案和参考资料。
 
 - **插入**：插入一共有八种情景；
+- 
  ![插入](https://clint-chan.github.io/CDG/assets/images/红黑树插入.png)
 - **删除**：删除简化后仍有九种情景。
+- 
  ![删除](https://clint-chan.github.io/CDG/assets/images/红黑树删除.png)
  
  [点击这里回到目录](#目录)
@@ -578,8 +581,8 @@ def LCS(s1, s2):
 LCS("abcde", "asdzbd")
 # 总之本程序就是由底至顶，由行至列，最后逆序输出。
 ```
-输出如图
-![选择排序](https://clint-chan.github.io/CDG/assets/images/lcs.png)
+输出如图，这里使用display函数美观的将其输出（国内技术人员不常用）
+![输出结果](https://clint-chan.github.io/CDG/assets/images/lcs.png)
 
 	要看懂这个图，并且要与上述代码一起看，理解每一步，下面我带大家来理解一下这个图：
 	1.输入和处理操作本图应从左至右，从上至下看起；输出操作反之。
