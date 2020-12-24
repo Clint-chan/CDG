@@ -405,6 +405,38 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 `③我们这边取标量乘法次数为:count=j*k*l.`
 
 	其中l为第二个矩阵的列数代表要做几次矩阵乘法（每次矩阵乘法进行了j*k次标量乘法）
+	
+  `④将各数组的行列值分别储存在指定的数据结构中`
+
+``` 
+Python代码
+p = [30, 35, 15, 5, 10, 20, 25] 
+def matrix_chain_order(p):
+    n = len(p) - 1   # 矩阵个数
+    m = [[0 for i in range(n)] for j in range(n)] 
+    s = [[0 for i in range(n)] for j in range(n)] # 用来记录最优解的括号位置
+    for l in range(1, n): # 控制列，从左往右
+        for i in range(l-1, -1, -1):  # 控制行,从下往上
+            m[i][l] = float('inf') # 保存要填充格子的最优值
+            for k in range(i, l):  # 控制分割点
+                q = m[i][k] + m[k+1][l] + p[i]*p[k+1]*p[l+1]
+                if q < m[i][l]:
+                    m[i][l] = q
+                    s[i][l] = k
+    return m, s
+
+def print_option_parens(s, i, j):
+    if i == j:
+        print('A'+str(i+1), end='')
+    else:
+        print('(', end='')
+        print_option_parens(s, i, s[i][j])
+        print_option_parens(s, s[i][j]+1, j)
+        print(')', end='')
+
+r, s = matrix_chain_order(p)
+print_option_parens(s, 0, 5)
+```
 
 ##### 3.LCS问题
 
@@ -462,8 +494,6 @@ LCS("abcde", "asdzbd")
 >>>b.如果chess[i][j - 1][1] > chess[i - 1][j][1]，即元素chess[i][j]在矩阵中的左边元素大于其正上方的元素，则chess[i][j]就为flag值='←'和原长度，组成的嵌套数组，即chess[i][j] = ['←', chess[i][j - 1][1]]
 >>>c.除了上述条件，一切均给chess[i][j]为['↑',原长度]。
 >>>d.值得注意的是本处理过程判断条件的先后一定要注意，肯定是先判断第一个if，判断两个子字符是否相等，要不然会乱套。
-
-
 
  [点击这里回到目录](#目录)
 #### 四.贪心算法
