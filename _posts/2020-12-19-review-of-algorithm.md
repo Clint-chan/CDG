@@ -450,6 +450,8 @@ def LCS(s1, s2):
 LCS("abcde", "asdzbd")
 # 总之本程序就是由底至顶，由行至列，最后逆序输出。
 ```
+> 输出操作
+> ![选择排序](https://clint-chan.github.io/CDG/assets/images/lcs.png)
 
 
  [点击这里回到目录](#目录)
