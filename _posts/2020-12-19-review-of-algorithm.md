@@ -390,9 +390,17 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 
 ![左旋](https://clint-chan.github.io/CDG/assets/images/左旋.png)
 
+
+----------
+
+
 - **插入**：插入一共有八种情景；
-- **删除**：删除简化后仍有九种情景。
+ ![左旋](https://clint-chan.github.io/CDG/assets/images/左旋.png)
+- **删除**：删除简化后仍有九种情景。、
+ 
+ 
  [点击这里回到目录](#目录)
+ 
 #### 三.动态规划 <i class="fas fa-highlighter"></i>
 	动态规划三要素：
 					（1）问题的阶段
