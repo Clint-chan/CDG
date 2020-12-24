@@ -205,6 +205,7 @@ def heapSort(arr):
 - （3）对所有的计数累加（从C中的第一个元素开始，每一项和前一项相加）
 - （4）反向填充目标数组：将每个元素i放在新数组的第C(i)项，每放一个元素就将C(i)减去1
 ![计数排序](https://www.runoob.com/wp-content/uploads/2019/03/countingSort.gif)
+
 ###### 6.2代码部分
 ``` 
 #计数排序Python代码
