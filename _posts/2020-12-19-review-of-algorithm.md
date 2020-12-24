@@ -56,6 +56,7 @@ tags: [算法导论复习,向高分前进！]
 
 ##### 1.选择排序
 ###### 1.1原理及图示
+在未排序数组中找到最小（大）关键词元素排在已排序序列初始位置，再如此，将选中的元素插入到已排序序列末尾。（类似于数据结构的进栈操作）
 ![选择排序](https://clint-chan.github.io/CDG/assets/images/selectionSort.gif)
 ###### 1.2代码部分
 ``` 
@@ -75,6 +76,7 @@ def selectionSort(arr):
 
 ##### 2.插入排序
 ###### 2.1原理及图示
+将第一待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列，依次读取未排序序列中的元素，并插入到已排序序列合理位置。
 ![插入排序](https://www.runoob.com/wp-content/uploads/2019/03/insertionSort.gif)
 ###### 2.2代码部分
 ``` 
@@ -92,6 +94,7 @@ def insertionSort(arr):
 
 ##### 3.归并排序
 ###### 3.1原理及图示
+需要申请内存空间，采用递归函数，依次二分，直至只剩一个元素，再依次合并。（最底层合并是1合1等于2，倒数第二层是2合2=4）
 ![归并排序](https://www.runoob.com/wp-content/uploads/2019/03/mergeSort.gif)
 ###### 3.2代码部分
 ``` 
@@ -120,6 +123,7 @@ def merge(left,right):
 
 ##### 4.快速排序<i class="fas fa-highlighter"></i>
 ###### 4.1原理及图示
+从序列中挑选一个基准值作为分割标准，然后再已分割的两个序列继续分割，再...分割，最后递归地（recursive）合并。如果还不明白请参考更多资料，考试可能要考。
 ![快速排序](https://www.runoob.com/wp-content/uploads/2019/03/quickSort.gif)
 ###### 4.2代码部分
 ``` 
@@ -151,11 +155,13 @@ def swap(arr, i, j):
 
 ##### 5.堆排序<i class="fas fa-highlighter"></i>
 ###### 5.1原理及图示
+首先构建树结构，随后构建极大（小）堆^[从右至左，由下到上的检查遍历每个非叶子节点，将大的节点当做当前根节点]，然后将最后节点与根节点交换，并将该根节点依次取出。
 ![堆排序](https://www.runoob.com/wp-content/uploads/2019/03/heapSort.gif)
 
 > 考试如无特别说明，高度深度从0开始记。
 > >树的高度为根节点的高度；某节点的高度等于该节点到叶子节点的最长路径（边数）；节点的深度是根节点到这个节点所经历的边的个数。
-
+> >构建极大堆时间复杂度:O(lgn)
+![选择排序](https://clint-chan.github.io/CDG/assets/images/heap_sort.png)
 ###### 5.2代码部分
 ``` 
 #堆排序 Python代码
