@@ -324,14 +324,15 @@ def shellSort(arr):
         gap = math.floor(gap/3)
     return arr
 ```
-##### 10.排序算法比较
+##### 10.排序算法比较<i class="fas fa-highlighter"></i>
 Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较这些算法吧！
 <i class="fab fa-angellist fa-3x"></i>
 
-![排序总结](https://clint-chan.github.io/CDG/assets/images/比较.jpg)
-
-对上述算法做到知其然并知其所以然。
-
+![排序总结](https://clint-chan.github.io/CDG/assets/images/比较_无水印.png)
+- 稳定性：有随机性的都统一为不稳定，其余为稳定。
+- 空间复杂度：精通流程就可以联想到。
+- 时间复杂度：需要熟读（伪）代码并了解数学推导
+- In-place & Out-place：需不需要开辟辅助空间，如果开辟的辅助空间与问题规模有关，则是out-place。假设你把排序时把数组中的数按顺序放入了一个新的数组，我就开了一个n规模大小的数组，这个就与数据规模有关。
 ----------
 
 
