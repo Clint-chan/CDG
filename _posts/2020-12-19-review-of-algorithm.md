@@ -326,10 +326,8 @@ def shellSort(arr):
         gap = math.floor(gap/3)
     return arr
 ```
-##### 10.排序算法比较<i class="fas fa-highlighter"></i>
+##### 10.排序算法比较
 Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较这些算法吧！
-<i class="fab fa-angellist fa-3x"></i>
-
 ![排序总结](https://clint-chan.github.io/CDG/assets/images/比较_无水印.png)
 - 稳定性：有随机性的都统一为不稳定，其余为稳定。
 - 空间复杂度：精通流程就可以联想到。
