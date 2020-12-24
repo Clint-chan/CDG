@@ -163,6 +163,7 @@ def swap(arr, i, j):
 > >构建极大堆时间复杂度:O(lgn)
 ![选择排序](https://clint-chan.github.io/CDG/assets/images/heap-sort.png)
 ###### 5.2代码部分
+
 ``` 
 #堆排序 Python代码
 def buildMaxHeap(arr):
