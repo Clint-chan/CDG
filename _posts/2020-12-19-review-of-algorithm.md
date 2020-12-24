@@ -162,6 +162,10 @@ def swap(arr, i, j):
 > >树的高度为根节点的高度；某节点的高度等于该节点到叶子节点的最长路径（边数）；节点的深度是根节点到这个节点所经历的边的个数。
 > >构建极大堆时间复杂度:O(lgn)
 
+
+----------
+
+
 ![选择排序](https://clint-chan.github.io/CDG/assets/images/heap-sort.png)
 ###### 5.2代码部分
 
