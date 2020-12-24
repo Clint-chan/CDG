@@ -395,9 +395,9 @@ Congretulations! 恭喜你已经复习完了排序算法，下面咱们来比较
 
 
 - **插入**：插入一共有八种情景；
- ![左旋](https://clint-chan.github.io/CDG/assets/images/红黑树插入.png)
-- **删除**：删除简化后仍有九种情景。、
- ![左旋](https://clint-chan.github.io/CDG/assets/images/红黑树删除.png)
+ ![插入](https://clint-chan.github.io/CDG/assets/images/红黑树插入.png)
+- **删除**：删除简化后仍有九种情景。
+ ![删除](https://clint-chan.github.io/CDG/assets/images/红黑树删除.png)
  
  [点击这里回到目录](#目录)
  
